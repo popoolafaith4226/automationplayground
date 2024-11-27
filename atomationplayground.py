@@ -4,16 +4,16 @@ from selenium import webdriver
 
 from selenium.webdriver.common.by import By
 
-#initializing thr browser
+# initializing thr browser
 driver = webdriver.Chrome()
 
-#launch the url
+# launch the url
 driver.get ("https://automationplayground.com/crm/login.html")
 
-#expand the browser
+# expand the browser
 driver.maximize_window()
 
-#enter email
+# enter email
 
 enter_email = driver.find_element (By.ID, "email-id")
 enter_email.send_keys("faith@gmail.com")
